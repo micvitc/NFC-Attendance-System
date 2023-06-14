@@ -9,7 +9,6 @@ marsh = Marshmallow(app)
 app.app_context().push()
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///nfc.sqlite3' 
 db = SQLAlchemy(app) 
-
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(50), nullable=False)
