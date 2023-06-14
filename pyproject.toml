@@ -1,17 +1,18 @@
 [tool.poetry]
-name = "nfc-proj"
+name = "nfc-attendance-system"
 version = "0.1.0"
 description = ""
 authors = ["Tejaswini <tejaswinithota83@gmail.com~>"]
 readme = "README.md"
-packages = [{include = "nfc_proj"}]
+packages = [{include = "nfc_attendance_system"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
 flask = "^2.3.2"
+flask-restful = "^0.3.10"
 flask-marshmallow = "^0.15.0"
 sqlalchemy = "^2.0.16"
-flask-restful = "^0.3.10"
+flask-sqlalchemy = "^3.0.3"
 
 
 [build-system]
